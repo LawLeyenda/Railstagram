@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Railsagram</title>
+  <title>Railstagram</title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -30,15 +30,12 @@
         <a href="<%= destroy_user_session_path%>" data-method="delete">
           <i class="fa fa-user"></i>
         </a>
-
-        <a href=”<%= user_path(current_user)%>”>
-          <i class=”fa fa-user”></i>
-        </a>
       <% else %>
-        <a href=”<%= new_user_session_path%>”>
-          <i class=”fa fa-sign-in”></i>
+        <a href="<%= new_user_session_path%>">
+          <i class="fa fa-sign-in"></i>
         </a>
       <% end %>
+
     </div>
   </div>
 </nav>
@@ -65,7 +62,7 @@
       <li>HASHTAGS</li>
       <li>LANGUAGE</li>
     </ul>
-    <p> © 2018 INSTAGRAM </p>
+    <p> © 2018 RAILSTAGRAM </p>
   </nav>
 </footer>
 </body>

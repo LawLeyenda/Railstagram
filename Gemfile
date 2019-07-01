@@ -53,7 +53,15 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+group :development, :test do
+  gem 'guard-livereload', '~> 2.5', require: false
+end
 
+group :development do
+  gem 'guard'
+  gem 'guard-zeus'
+  gem 'rack-livereload'
+end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
